@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-05-16 18:23:34.711090",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab",
+  "title",
+  "equipment_type",
+  "fixed",
+  "column_break_5",
+  "year_of_construction",
+  "serial_number",
+  "status",
+  "section_break_9",
+  "comment",
+  "context_section",
+  "house",
+  "column_break_13",
+  "rental_unit",
+  "tree_view_settings_section",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_equipment"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_tab",
+   "fieldtype": "Section Break",
+   "label": "General Tab"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year_of_construction",
+   "fieldtype": "Date",
+   "label": "Year of construction"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial number"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nPassive\nBroken"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Small Text",
+   "label": "Comment"
+  },
+  {
+   "description": "Belongs either to a house or a rental unit.",
+   "fieldname": "context_section",
+   "fieldtype": "Section Break",
+   "label": "Context"
+  },
+  {
+   "fieldname": "house",
+   "fieldtype": "Link",
+   "label": "House",
+   "options": "House"
+  },
+  {
+   "fieldname": "rental_unit",
+   "fieldtype": "Link",
+   "label": "Rental Unit",
+   "options": "Rental Unit"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Equipment"
+  },
+  {
+   "fieldname": "parent_equipment",
+   "fieldtype": "Link",
+   "label": "Parent Equipment",
+   "options": "Equipment"
+  },
+  {
+   "fieldname": "tree_view_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Tree View Settings"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment_type",
+   "fieldtype": "Link",
+   "label": "Equipment Type",
+   "options": "Equipment Type"
+  },
+  {
+   "fieldname": "fixed",
+   "fieldtype": "Select",
+   "label": "Fixed",
+   "options": "Built in\nMobil"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2023-05-16 18:37:54.129944",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Equipment",
+ "naming_rule": "Autoincrement",
+ "nsm_parent_field": "parent_equipment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

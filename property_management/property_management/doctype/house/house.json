@@ -1,0 +1,247 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-16 12:43:23.973912",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "address",
+  "column_break_3",
+  "owner",
+  "image",
+  "maintenance_section",
+  "hausmeister",
+  "column_break_8",
+  "bank_account",
+  "utility_billing_section",
+  "accounting_period",
+  "column_break_12",
+  "accounting_period_to",
+  "utility_billing",
+  "datev_section",
+  "consultant_number",
+  "column_break_15",
+  "client",
+  "energy_policies_section",
+  "energy_performance_certificate",
+  "column_break_19",
+  "energy_performance_certificate_valid",
+  "rental_units_section",
+  "rental_units",
+  "supplier",
+  "equipment_table",
+  "meter_table",
+  "context_section",
+  "asset",
+  "purchase_date",
+  "column_break_25",
+  "owning_company",
+  "assessed_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Link",
+   "label": "Owner",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "hausmeister",
+   "fieldtype": "Link",
+   "label": "Hausmeister",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Bank Account",
+   "options": "Bank Account"
+  },
+  {
+   "fieldname": "accounting_period",
+   "fieldtype": "Datetime",
+   "label": "Accounting Period From"
+  },
+  {
+   "fieldname": "utility_billing",
+   "fieldtype": "Attach",
+   "label": "Utility Billing"
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "options": "Asset"
+  },
+  {
+   "fetch_from": "asset.company",
+   "fieldname": "owning_company",
+   "fieldtype": "Link",
+   "label": "Owning Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "datev_section",
+   "fieldtype": "Section Break",
+   "label": "DATEV"
+  },
+  {
+   "fieldname": "consultant_number",
+   "fieldtype": "Data",
+   "label": "Consultant Number"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fetch_from": "asset.gross_purchase_amount",
+   "fieldname": "assessed_value",
+   "fieldtype": "Data",
+   "label": "Assessed Value",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "asset.purchase_date",
+   "fieldname": "purchase_date",
+   "fieldtype": "Data",
+   "label": "Purchase Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "energy_performance_certificate",
+   "fieldtype": "Data",
+   "label": "Energy Performance Certificate"
+  },
+  {
+   "fieldname": "energy_performance_certificate_valid",
+   "fieldtype": "Date",
+   "label": "Energy Performance Certificate Valid"
+  },
+  {
+   "fieldname": "utility_billing_section",
+   "fieldtype": "Section Break",
+   "label": "Utility Billing"
+  },
+  {
+   "fieldname": "energy_policies_section",
+   "fieldtype": "Section Break",
+   "label": "Energy Policies"
+  },
+  {
+   "fieldname": "rental_units_section",
+   "fieldtype": "Section Break",
+   "label": "Rental Units & Belongings"
+  },
+  {
+   "fieldname": "context_section",
+   "fieldtype": "Section Break",
+   "label": "Context"
+  },
+  {
+   "fieldname": "maintenance_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accounting_period_to",
+   "fieldtype": "Date",
+   "label": "Accounting Period To"
+  },
+  {
+   "fieldname": "rental_units",
+   "fieldtype": "Table",
+   "label": "Rental Units",
+   "options": "Rental Unit Table"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Table",
+   "label": "Supplier",
+   "options": "Supplier Table"
+  },
+  {
+   "fieldname": "equipment_table",
+   "fieldtype": "Table",
+   "label": "Equipment Table",
+   "options": "Equipment Item Table"
+  },
+  {
+   "fieldname": "meter_table",
+   "fieldtype": "Table",
+   "label": "Meter Table",
+   "options": "Meter Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-19 12:00:25.021393",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "House",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

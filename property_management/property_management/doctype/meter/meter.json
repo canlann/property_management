@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-19 11:41:33.969972",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab_section",
+  "titel",
+  "location",
+  "column_break_4",
+  "meter_number",
+  "description",
+  "data_sheet_section",
+  "unit_of_measurement",
+  "meter_type",
+  "faktor",
+  "meter_readings",
+  "column_break_9",
+  "installation_date",
+  "removal_date",
+  "calibration_date",
+  "kommentar",
+  "context_section",
+  "house",
+  "column_break_19",
+  "rental_unit",
+  "section_break_18",
+  "customer",
+  "column_break_23",
+  "house_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_tab_section",
+   "fieldtype": "Section Break",
+   "label": "General Tab"
+  },
+  {
+   "fieldname": "titel",
+   "fieldtype": "Data",
+   "label": "Titel"
+  },
+  {
+   "description": "Describe where it is located.",
+   "fieldname": "location",
+   "fieldtype": "Small Text",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meter_number",
+   "fieldtype": "Data",
+   "label": "Meter Number"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "data_sheet_section",
+   "fieldtype": "Section Break",
+   "label": "Data Sheet"
+  },
+  {
+   "fieldname": "unit_of_measurement",
+   "fieldtype": "Link",
+   "label": "Unit of measurement",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "kommentar",
+   "fieldtype": "Small Text",
+   "label": "Kommentar"
+  },
+  {
+   "fieldname": "faktor",
+   "fieldtype": "Data",
+   "label": "Faktor"
+  },
+  {
+   "fieldname": "meter_type",
+   "fieldtype": "Link",
+   "label": "Meter Type",
+   "options": "Meter Type"
+  },
+  {
+   "fieldname": "installation_date",
+   "fieldtype": "Date",
+   "label": "Installation Date"
+  },
+  {
+   "fieldname": "removal_date",
+   "fieldtype": "Date",
+   "label": "Removal Date"
+  },
+  {
+   "fieldname": "calibration_date",
+   "fieldtype": "Date",
+   "label": "Calibration Date"
+  },
+  {
+   "fieldname": "context_section",
+   "fieldtype": "Section Break",
+   "label": "Context"
+  },
+  {
+   "fieldname": "house",
+   "fieldtype": "Link",
+   "label": "House",
+   "options": "House"
+  },
+  {
+   "fieldname": "rental_unit",
+   "fieldtype": "Link",
+   "label": "Rental Unit",
+   "options": "Rental Unit"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break",
+   "label": "More Information",
+   "options": "Other"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "house_number",
+   "fieldtype": "Data",
+   "label": "House Number"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meter_readings",
+   "fieldtype": "Table",
+   "label": "Meter Readings",
+   "options": "Meter Reading"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-19 12:03:40.438455",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Meter",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

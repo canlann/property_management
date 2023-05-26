@@ -1,0 +1,223 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:101-{###}",
+ "creation": "2023-05-16 13:29:49.634347",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_tab_section",
+  "title",
+  "type",
+  "status",
+  "column_break_4",
+  "contract",
+  "usage",
+  "address",
+  "description_section",
+  "etage",
+  "rooms",
+  "number_parking_spaces",
+  "number_garage_spaces",
+  "column_break_14",
+  "living_area",
+  "storage_area",
+  "industrial_area",
+  "heating_area",
+  "advertisement_area_in_squaremeters",
+  "column_break_19",
+  "total_area",
+  "rooms_section",
+  "rooms_table",
+  "meter_table",
+  "equipment_item_table",
+  "superior_unit_section",
+  "house",
+  "column_break_23",
+  "asset"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Apartement\nOffice\nGarage"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Rented\nTerminated\nEmpty\nConstruction Site"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "label": "Contract",
+   "options": "Contract"
+  },
+  {
+   "fieldname": "usage",
+   "fieldtype": "Select",
+   "label": "Usage",
+   "options": "Living\nOffice\nIndustrial\nHotel\nShop\nWarehouse\nClinic\nRestaurant\nParking Lot\nAdvertisement Area\nGarage\nOthers"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "description_section",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "etage",
+   "fieldtype": "Int",
+   "label": "Etage"
+  },
+  {
+   "fieldname": "rooms",
+   "fieldtype": "Float",
+   "label": "Rooms"
+  },
+  {
+   "fieldname": "living_area",
+   "fieldtype": "Float",
+   "label": "Living Area"
+  },
+  {
+   "fieldname": "industrial_area",
+   "fieldtype": "Float",
+   "label": "Industrial Area"
+  },
+  {
+   "fieldname": "storage_area",
+   "fieldtype": "Float",
+   "label": "Storage Area"
+  },
+  {
+   "fieldname": "heating_area",
+   "fieldtype": "Float",
+   "label": "Heating Area"
+  },
+  {
+   "fieldname": "number_parking_spaces",
+   "fieldtype": "Int",
+   "label": "Number Parking Spaces"
+  },
+  {
+   "fieldname": "number_garage_spaces",
+   "fieldtype": "Int",
+   "label": "Number Garage Spaces"
+  },
+  {
+   "fieldname": "advertisement_area_in_squaremeters",
+   "fieldtype": "Float",
+   "label": "Advertisement Area"
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Data",
+   "label": "Total Area"
+  },
+  {
+   "description": "A rental unit can exist within the superior unit of a house or the rental unit is its own asset.",
+   "fieldname": "superior_unit_section",
+   "fieldtype": "Section Break",
+   "label": "Context"
+  },
+  {
+   "fieldname": "house",
+   "fieldtype": "Link",
+   "label": "House",
+   "options": "House"
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "general_tab_section",
+   "fieldtype": "Section Break",
+   "label": "General Tab"
+  },
+  {
+   "fieldname": "rooms_section",
+   "fieldtype": "Section Break",
+   "label": "Rooms"
+  },
+  {
+   "fieldname": "rooms_table",
+   "fieldtype": "Table",
+   "label": "Rooms Table",
+   "options": "Room Table"
+  },
+  {
+   "fieldname": "meter_table",
+   "fieldtype": "Table",
+   "label": "Meter Table",
+   "options": "Meter Table"
+  },
+  {
+   "fieldname": "equipment_item_table",
+   "fieldtype": "Table",
+   "label": "Equipment Item Table",
+   "options": "Equipment Item Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-19 13:29:18.392414",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Rental Unit",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-19 11:57:44.835846",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "meter_type",
+  "meter_number",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Title",
+   "options": "Meter",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "title.meter_type",
+   "fieldname": "meter_type",
+   "fieldtype": "Data",
+   "label": "Meter Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "title.meter_number",
+   "fieldname": "meter_number",
+   "fieldtype": "Data",
+   "label": "Meter Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "title.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-19 11:59:27.794491",
+ "modified_by": "Administrator",
+ "module": "Property Management",
+ "name": "Meter Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
